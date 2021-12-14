@@ -45,7 +45,7 @@
 			<td><%= f.getSfile() %></td>
 			<td><%= f.getPostdate() %></td>
 			<!-- 원본 파일명이 한글인 경우 깨짐 방지를 위해 URL 인코딩 처리를 한다. -->
-			<td><a href="Download.jsp?oName<%= URLEncoder.encode(f.getOfile(),"UTF-8") %>&sName<%= URLEncoder.encode(f.getSfile(),"UTF-8") %>">[다운로드]</a></td>
+			<td><a href="Download.jsp?oName=<%= URLEncoder.encode(f.getOfile(),"UTF-8") %>&sName=<%= URLEncoder.encode(f.getSfile(),"UTF-8") %>">[다운로드]</a></td>
 		</tr>	
 	<% } %>	
 	</table>
