@@ -43,7 +43,6 @@ else{
 	//로그인 페이지로 포워드(페이지 전달) 한다.
 	request.getRequestDispatcher("LoginForm.jsp").forward(request, response);
 }
-
 %>
 
 
